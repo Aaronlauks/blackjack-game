@@ -1,0 +1,204 @@
+html {
+    background-color: green;
+    overflow: hidden;
+}
+
+body {
+    text-align: center;
+    font-size: 3pc;
+    font-family: fantasy;
+}
+
+li {
+    display: inline-flex;
+    margin-right: 15vw;
+    margin-left: 15vw;
+}
+
+img {
+    width: 150px;
+    transform: translate(-50px, 300px);
+    position: absolute;
+}
+
+#pre-game {
+    display: none;
+}
+
+#pre-ul {
+    visibility: hidden;
+}
+
+a img {
+    cursor: pointer;
+}
+
+#HIT {
+    opacity: 100%;
+    position: absolute;
+    transform: translate(-50px, -500px);
+    display: block;
+    font-size: 100px;
+    color: black;
+}
+
+a:hover #HIT {
+    display: inline-flex;
+    transform: translate(-50px, 0px);
+    opacity: 25%;
+    transition: ease-in-out, 0.5s;
+    font-size: 100px;
+    color: black;
+}
+
+a:active #HIT {
+    display: inline-flex;
+    opacity: 100%;
+    transition: 0s;
+    transform: translate(-55px, -10px);
+    font-size: 105px;
+    color: rgb(187, 187, 187);
+}
+
+#STAND {
+    opacity: 100%;
+    position: absolute;
+    transform: translate(-150px, -500px);
+    display: block;
+    font-size: 100px;
+    color: black;
+}
+
+#you:hover #STAND {
+    display: inline-flex;
+    opacity: 25%;
+    transform: translate(-150px, 0px);
+    transition: ease-in-out, 0.5s;
+    font-size: 100px;
+    color: black;
+}
+
+#you:active #STAND {
+    display: inline-flex;
+    opacity: 100%;
+    transition: 0s;
+    transform: translate(-155px, -10px);
+    font-size: 105px;
+    color: rgb(187, 187, 187);
+}
+
+#start-btn {
+    font-size: 30px;
+    left: 47%;
+    top: 33%;
+    color: black;
+    position: absolute;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgb(203, 203, 255);
+}
+
+#start-btn:hover {
+    background-color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+#start-btn:active {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); background-color: rgb(255, 0, 0); color: white;}
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); background-color: rgb(255, 0, 0); color: white;}
+  }
+
+  @keyframes doubleShake {
+    0% { transform: translate(1px, 1px) rotate(0deg); color: red;}
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); color: red;}
+  }
+
+@keyframes chip {
+    from {}
+
+    to {
+        transform: translate(-50px, -100px);
+    }
+}
+
+#addAmt {
+    transform: translate(700px, 0px);
+}
+
+#DOUBLE {
+    position: absolute;
+    transform: translate(0px, -500px);
+    margin-left: 37%;
+    opacity: 100%;
+    color: black;
+}
+
+.addChipHover:hover #DOUBLE {
+    transform: translate(0px, 0px);
+    opacity: 25%;
+    transition: cubic-bezier(0.785, 0.135, 0.15, 0.86), 0.5s;
+    color: black;
+}
+
+.addChipHover:active #DOUBLE {
+    opacity: 100%;
+    font-size: 100px;
+    transform: translate(5px, -10px);
+    transition: 0s;
+    animation: doubleShake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+#player-info {
+    font-size: 25px;
+    transform: translate(0px, 460px);
+    position: absolute;
+    width: 20%;
+    background-color: rgba(0, 0, 0, 0.274);
+    border: 3px solid #f1f1f1;
+    padding: -20px;
+    left: 42%;
+    height: 15%;
+    border-radius: 0.5pc;
+}
+
+.player-txt {
+    transform: translate(0px, -20px);
+}
+
+h2 {
+    transform: translate(0px, -50px);
+}
+
+#card_count{
+  position: absolute;
+  color: white;
+  font-size: 50px;
+  left: 50%;
+  transform: translate(-20px, 502px);
+}
